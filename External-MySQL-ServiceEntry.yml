@@ -1,0 +1,14 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: ServiceEntry
+metadata:
+  name: mysql-external
+spec:
+  hosts:
+  - jddb-cn-north-1-5c9c7adee15441e0.jcloud.com
+  addresses:
+  - 10.0.2.10/32
+  ports:
+  - name: tcp
+    number: 3306
+    protocol: tcp
+  location: MESH_EXTERNAL
