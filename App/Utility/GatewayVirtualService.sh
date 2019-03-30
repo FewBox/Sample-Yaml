@@ -10,7 +10,7 @@ metadata:
   name: $3
 spec:
   hosts:
-  - sample.fewbox.com
+  - "*"
   gateways:
   - $2
   http:
