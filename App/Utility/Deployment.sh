@@ -10,7 +10,7 @@ R=$7
 if [ "$#" = 6 ]
   then
     echo "Set replicas as 1."
-    $R=1
+    R=1
 fi
 cat <<EOF | kubectl apply -f -
 apiVersion: extensions/v1beta1
