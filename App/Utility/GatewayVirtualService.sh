@@ -35,7 +35,7 @@ spec:
         prefix: /
     route:
     - destination:
-        host: unsplashapp-service
+        host: unsplash-service
         port:
           number: 80
 EOF
