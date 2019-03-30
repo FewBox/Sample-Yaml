@@ -19,7 +19,7 @@ spec:
         prefix: /api/signin
     route:
     - destination:
-        host: sample-istio-auth
+        host: auth-service
         port:
           number: 80
   - match:
@@ -27,7 +27,7 @@ spec:
         prefix: /api/photos
     route:
     - destination:
-        host: sample-istio-photo
+        host: photo-service
         port:
           number: 80
   - match:
@@ -35,7 +35,7 @@ spec:
         prefix: /
     route:
     - destination:
-        host: sample-istio-unsplashapp
+        host: unsplashapp-service
         port:
           number: 80
 EOF
