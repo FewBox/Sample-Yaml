@@ -16,6 +16,7 @@ cat <<EOF | kubectl apply -f -
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
+  namespace: $1
   name: $4-$3
 spec:
   replicas: $R
