@@ -1,6 +1,7 @@
 #!/bin/sh
 NS=fewbox-staging
 GATEWAY=fewbox-staging-gateway
+
 # Gateway
 . ./Utility/Gateway.sh $NS $GATEWAY web HTTP 80
 # Gateway Virtual Service
