@@ -24,6 +24,7 @@ spec:
     metadata:
       labels:
         app: $2
+        version: $3
     spec:
       containers:
       - name: $2
